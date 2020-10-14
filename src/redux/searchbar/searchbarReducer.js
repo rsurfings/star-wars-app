@@ -1,7 +1,4 @@
 import {
-  FETCH_REQUEST,
-  FETCH_SUCCESS,
-  FETCH_FAILURE,
   SEARCH_QUERY,
   FETCH_QUERY,
   SEARCH_OPTION
@@ -17,23 +14,6 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case FETCH_REQUEST:
-      return {
-        ...state,
-        loading: true
-      }
-    case FETCH_SUCCESS:
-      return {
-        loading: false,
-        items: action.payload,
-        error: ''
-      }
-    case FETCH_FAILURE:
-      return {
-        loading: false,
-        items: [],
-        error: action.payload
-      }
     case SEARCH_QUERY:
       return {
         ...state,

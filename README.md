@@ -1,8 +1,29 @@
+# Running Node.js apps with docker - example code
+
+## Example APP
+The example Node.js app includes dummy code and tests
+
+### Running the application
+
+The application is built with Node.js and already has all environment configured with docker. To start the application you will need `docker` and `docker-compose` installed on the machine. Having that you may run:
+
+```shell
+docker-compose up
+```
+
+And then the application will be started:
+
+```shell
+Creating star-wars-app_client_1 ... done
+```
+
+The application will be avaible on *PORT 3000* by default, but it's configurable via `docker-compose.yml` file as an environment variable.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run if necessary, as the docker already starts the application:
 
 ### `npm start`
 
