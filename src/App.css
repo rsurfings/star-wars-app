@@ -1,38 +1,136 @@
-.App {
+/* stylelint-disable selector-list-comma-newline-after */
+
+* {
+  font-family: Montserrat;
+}
+
+.starwars-header-logo {
+  width: 98px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0ab463;
+}
+
+.starwars-main {
+  height: 900px;
+  background-color: #ededed;
+}
+
+.col-md-6 {
+  margin-top: 3%;
+}
+
+.SearchContainer {
+  width: 410px;
+  height: 230px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 var(--warm-grey-75);
+  border: solid 1px var(--white);
+  background-color: #ffffff;
+}
+
+.MatchesBG {
+  height: 582px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 var(--warm-grey-75);
+  border: solid 1px var(--white);
+  background-color: #ffffff;
+}
+
+.What-are-you-searching-for {
+  width: 205px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #383838;
+  margin-top: 10%;
+}
+
+.SearchButton {
+  width: 350px;
+  height: 34px;
+  border-radius: 20px;
+  border: solid 1px #0ab463;
+  background-color: #0ab463;
+  color: #ffffff;
+}
+
+.Results {
+  width: 71px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.Details {
+  width: 134px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #0ab463;
+  color: #ffffff;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+div.hr-or {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
   text-align: center;
+  height: 0px;
+  line-height: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.hr-or:before {
+  content: 'OR';
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  height: 0px;
+  line-height: 0px;
+}
+  
+button {
+  width: 350px;
+  height: 34px;
+  border-radius: 20px;
+  border: solid 1px #0ab463;
+  background-color: #0ab463;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled, button[disabled] {
+  width: 350px;
+  height: 34px;
+  border-radius: 20px;
+  border: solid 1px #c4c4c4;
+  background-color: #c4c4c4;
 }
